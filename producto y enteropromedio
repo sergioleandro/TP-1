@@ -1,0 +1,25 @@
+* programa que devuelve el producto y la parte entera de un promedio entre dos números
+*157225-8
+*Pereyra, sergio leandro
+*16/04/2015
+*/
+#include <iostream>
+using namespace std;
+int main ( )
+{
+	int A,B, producto ;
+	float enteroprom;
+	cout.setf(ios::fixed);
+    cout.setf(ios::showpoint);
+    cout.precision(2);
+	cout<< "introducir un numero entero\n";
+	cout<< "introducir otro numero entero\n";
+	cout<< "oprima Enter\n";
+	cin>> A;
+	cin>> B;
+	enteroprom= (A+B)/2;
+	producto= A*B;	
+	cout<< "la parte entera del promedio es:"<< enteroprom;
+	cout<< "el producto es:"<< producto;
+	return 0;
+}
